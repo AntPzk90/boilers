@@ -64,7 +64,7 @@ h2 {
     height: 26px;
     width: 30px;
     position: absolute;
-    top: 35px;
+    top: 30px;
     right: 20px;
     background-color: #be2323;
     border: none;
@@ -174,7 +174,7 @@ h2 {
     font-size: 42px;
     position: absolute;
     top: 20px;
-    left: 30px;
+    left: 10px;
   }
 }
 .logo .eco-sistem-txt {
@@ -708,10 +708,20 @@ h2 {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .services__list .services__list-item {
+    width: 100%;
+  }
+}
 .services__list .services__mini-title {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .services__list .services__mini-title {
+    font-size: 18px;
+  }
 }
 .why-we__title {
   text-align: center;
@@ -821,8 +831,11 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .delivery-bold-txt {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1271,15 +1284,22 @@ h2 {
 @media screen and (max-width: 768px) {
   .adress__list {
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 0px;
+    width: 100%;
+    padding-top: 30px;
   }
 }
 .adress__list-item {
   padding: 0 70px;
+  font-size: 24px;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .adress__list-item {
+    box-sizing: border-box;
     margin-bottom: 30px;
+    padding: 0 20px;
+    text-align: center;
   }
 }
 .map__wrapper {
@@ -1299,10 +1319,6 @@ h2 {
   .map__wrapper {
     width: 100%;
   }
-}
-.adress__list-item {
-  font-size: 24px;
-  font-weight: bold;
 }
 .you-link {
   color: #000;
