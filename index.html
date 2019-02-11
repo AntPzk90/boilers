@@ -15,10 +15,10 @@
 				<a href="#" class="tel-2">099-876-87-87</a>
 				<nav class="navigation">
 					<ul class="nav__list">
-						<li class="nav__list-item"><a href="">Главная</a></li>
-						<li class="nav__list-item"><a href="">Продукция</a></li>
-						<li class="nav__list-item"><a href="">Прайслист</a></li>
-						<li class="nav__list-item"><a href="">Котнакты</a></li>
+						<li class="nav__list-item"><a href="" id="main-link">Главная</a></li>
+						<li class="nav__list-item"><a href="" id="setting-link">Монтаж</a></li>
+						<li class="nav__list-item"><a href="" id="catalog-link">Каталог</a></li>
+						<li class="nav__list-item"><a href="" id="contacts-link">Котнакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -26,7 +26,7 @@
 				<li class="tel_nums-item">099-876-87-87</li>
 				<li class="tel_nums-item">099-876-87-87</li>
 			</ul>
-			<button class="moby-btn x">
+			<button class="moby-btn">
 				<span class="moby-btn-decor"></span>
 			</button>
 		</div>
@@ -77,7 +77,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services" id="settings">
 			<div class="services__wrapper container">
 				<h2 class="services__title">Монтаж и<span class="red-span"> установка</span> оборудования</h2>
 				<ul class="services__list">
@@ -158,7 +158,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="main-catalog">
+		<section class="main-catalog" id="catalog">
 			<div class="catalog__wrapper container">
 				<h2 class="catalog__title">Каталог<span class="red-span"> продукции</span></h2>
 				<span class="catalog__dscr">
@@ -399,8 +399,8 @@
 			</div>
 		</section>
 	</main>
-	<footer class="main__footer">
-		<!-- <div class="footer__wrapper container"> -->
+	<footer class="main__footer" id="contacts">
+		<div class="footer__wrapper container">
 			<ul class="adress__list">
 				<li class="adress__list-item">
 					ул. Постышева 15<br>
@@ -418,10 +418,411 @@
 				</li>
 			</ul>
 			<div class="map__wrapper">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.6070507645927!2d33.395102671912106!3d47.8935412086336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db20cb8e794417%3A0x44e22f86ef4d195c!2z0L_RgNC-0YHQvy4g0JzQtdGC0LDQu9C70YPRgNCz0L7QsiwgOCwg0JrRgNC40LLQvtC5INCg0L7Qsywg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDUwMDAw!5e0!3m2!1sru!2sua!4v1549652416885" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.6070507645927!2d33.395102671912106!3d47.8935412086336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db20cb8e794417%3A0x44e22f86ef4d195c!2z0L_RgNC-0YHQvy4g0JzQtdGC0LDQu9C70YPRgNCz0L7QsiwgOCwg0JrRgNC40LLQvtC5INCg0L7Qsywg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDUwMDAw!5e0!3m2!1sru!2sua!4v1549652416885" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
 			</div>
-		<!-- </div>	 -->
+		</div>
 	</footer>
+<div class="popup-item" id="popup-1">
+	<button class="popup-close"></button>
+		<div class="boilers">
+			<div class="boiler-img__wrapper">
+				<img src="imgs/A25.jpg" width="158" height="200">
+				<p>
+					<strong>VERNER A25</strong> - автоматический котёл, использующий в качестве топлива кукурузу, маис, зерно и злаковые гранулы.
+				</p>
+				<table class="moby-table">
+					<tr>
+						<td>Расчетная мощность</td>
+						<td>25кВ(макс . 30 кВ)</td>
+					</tr>
+					<tr>
+						<td>Кпд</td>
+						<td>92%</td>
+					</tr>
+					<tr>
+						<td>Расход топлива</td>
+						<td>5.6 кг/ч</td>
+					</tr>
+				</table>
+			</div>
+	<table width="550" cellpadding="0" cellspacing="0" summary="" border="1" class="popup-table">
+	<tbody><tr align="center" valign="middle">
+		<th width="252"><div align="center">Топливо</div></th>
+		<th width="97"><div align="center">Древесные гранулы</div></th>
+		<th width="102"><div align="center">Альтернативные гранулы</div></th>
+		<th width="89"><div align="center">Кукуруза (ячмень, овес, рожь, маис, пшено)</div></th>
+		</tr>
+		<tr valign="top">
+		  <td width="252">Расчетная мощность </td>
+		  <td align="center" valign="middle"> 25 кВ ( макс . 30 кВ ) </td>
+		  <td align="center" valign="middle"> 23 кВ </td>
+		  <td align="center" valign="middle"> 23 кВ </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Регулировка при непрерывной работе</td>
+		  <td align="center" valign="middle"> 7,5 - 25 кВ </td>
+		  <td align="center" valign="middle"> 7,5 - 23 кВ </td>
+		  <td align="center" valign="middle"> 7,5 - 23 кВ </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> КПД *	</td>
+		  <td align="center" valign="middle"> 92,7% </td>
+		  <td align="center" valign="middle"> 91% </td>
+		  <td align="center" valign="middle"> 85 - 91% ** </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Средняя потребляемость топлива (при расчетной мощности): 	</td>
+		  <td align="center" valign="middle"> 5,6 кг / час </td>
+		  <td align="center" valign="middle"> 6,8 кг / час </td>
+		  <td align="center" valign="middle"> 6,5 - 7,5 кг / час </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Период горения при стандартной подаче топлива (при расчетной мощности): </td>
+		  <td align="center" valign="middle"> 30 часов </td>
+		  <td align="center" valign="middle"> 25 часов </td>
+		  <td align="center" valign="middle"> 25 часов </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Объем стандартного топливного бункера : </td>
+		  <td align="center" valign="middle"> 240 л </td>
+		  <td align="center" valign="middle"> 240 л </td>
+		  <td align="center" valign="middle"> 240 л </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Диаметр горловины дымохода : </td>
+		  <td align="center" valign="middle"> 160 мм </td>
+		  <td align="center" valign="middle"> 160 мм </td>
+		  <td align="center" valign="middle"> 160 мм </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Заданная рабочая тяга дымохода : </td>
+		  <td align="center" valign="middle"> 15 - 30 Па </td>
+		  <td align="center" valign="middle"> 15 - 30 Па </td>
+		  <td align="center" valign="middle"> 15 - 30 Па </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Высота котла : </td>
+		  <td align="center" valign="middle"> 1525 мм </td>
+		  <td align="center" valign="middle"> 1525 мм </td>
+		  <td align="center" valign="middle"> 1525 мм </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Ширина котла : </td>
+		  <td align="center" valign="middle"> 670 мм </td>
+		  <td align="center" valign="middle"> 670 мм </td>
+		  <td align="center" valign="middle"> 670 мм </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Глубина котла : </td>
+		  <td align="center" valign="middle"> 1386 мм </td>
+		  <td align="center" valign="middle"> 1386 мм </td>
+		  <td align="center" valign="middle"> 1386 мм </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Общий вес : 	</td>
+		  <td align="center" valign="middle"> 500 кг </td>
+		  <td align="center" valign="middle"> 500 кг </td>
+		  <td align="center" valign="middle"> 500 кг </td>
+		  </tr>
+		<tr valign="top">
+		  <td width="252"> Материал корпуса котла : 	</td>
+		  <td align="center" valign="middle"> Котельный лист кл . 11 </td>
+		  <td align="center" valign="middle"> Котельный лист кл . 11 </td>
+		  <td align="center" valign="middle"> Котельный лист кл . 11 </td>
+		  </tr>
+		</tbody>
+	</table>
+	</div>
+</div>
+
+	<div class="popup-item" id="popup-2">
+		<button class="popup-close"></button>
+		<div class="boilers">
+			<div class="boiler-img__wrapper">
+				<img src="imgs/A50.jpg" width="158" height="200">
+				<p>
+					<strong>VERNER A50</strong> - автоматический котёл, использующий в качестве топлива кукурузу, маис, зерно и злаковые гранулы.
+				</p>
+				<table class="moby-table">
+					<tr>
+						<td>Расчетная мощность</td>
+						<td>25кВ(макс . 30 кВ)</td>
+					</tr>
+					<tr>
+						<td>Кпд</td>
+						<td>92%</td>
+					</tr>
+					<tr>
+						<td>Расход топлива</td>
+						<td>5.6 кг/ч</td>
+					</tr>
+				</table>
+			</div>
+	<table width="550" cellpadding="0" cellspacing="0" summary="" border="1" class="popup-table">
+	<tbody><tr align="center" valign="middle">
+	<th width="252"><div align="center">Топливо</div></th>
+	<th width="97"><div align="center"> Древесные гранулы (O 6 - 14 мм ) </div></th>
+	<th width="102"><div align="center"> Альтернативные гранулы (O 6 - 14 мм ) </div></th>
+	<th width="89"><div align="center">Кукуруза (ячмень, овес, рожь, тритикале, маис, пшено)
+
+</div></th>
+	</tr>
+	<tr valign="top">
+	  <td width="252" valign="middle">Расчетная мощность </td>
+	  <td align="center" valign="middle"> 48 кВ ( макс . 53 кВ )	</td>
+	  <td align="center" valign="middle"> 45 кВ	</td>
+	  <td align="center" valign="middle"> 45 кВ	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Регулировка при непрерывной работе</td>
+	  <td align="center" valign="middle"> 12 - 48 кВ	</td>
+	  <td align="center" valign="middle"> 15 - 45 кВ	</td>
+	  <td align="center" valign="middle"> 15 - 45 кВ	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> КПД *	</td>
+	  <td align="center" valign="middle"> 92,7% </td>
+	  <td align="center" valign="middle"> 91% </td>
+	  <td align="center" valign="middle"> 85 - 91% ** </td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Средняя потребляемость топлива (при расчетной мощности): 	</td>
+	  <td align="center" valign="middle"> 10,5 кг / час	</td>
+	  <td align="center" valign="middle"> 13 кг / час	</td>
+	  <td align="center" valign="middle"> 12 - 14 кг / час	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Период горения при стандартной подаче топлива (при расчетной мощности): </td>
+	  <td align="center" valign="middle"> 16 час ов	</td>
+	  <td align="center" valign="middle"> 14 час ов	</td>
+	  <td align="center" valign="middle"> 14 час ов	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Объем стандартного топливного бункера : </td>
+	  <td align="center" valign="middle"> 240 л </td>
+	  <td align="center" valign="middle"> 240 л </td>
+	  <td align="center" valign="middle"> 240 л </td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Диаметр горловины дымохода : </td>
+	  <td align="center" valign="middle"> 160 мм </td>
+	  <td align="center" valign="middle"> 160 мм </td>
+	  <td align="center" valign="middle"> 160 мм </td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Заданная рабочая тяга дымохода : </td>
+	  <td align="center" valign="middle"> 15 - 30 Па </td>
+	  <td align="center" valign="middle"> 15 - 30 Па </td>
+	  <td align="center" valign="middle"> 15 - 30 Па </td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Высота котла : </td>
+	  <td align="center" valign="middle"> 1400 мм	</td>
+	  <td align="center" valign="middle"> 1400 мм	</td>
+	  <td align="center" valign="middle"> 1400 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Ширина котла : </td>
+	  <td align="center" valign="middle"> 670 мм </td>
+	  <td align="center" valign="middle"> 670 мм </td>
+	  <td align="center" valign="middle"> 670 мм </td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Глубина котла : </td>
+	  <td align="center" valign="middle"> 1650 мм	</td>
+	  <td align="center" valign="middle"> 1650 мм	</td>
+	  <td align="center" valign="middle"> 1650 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Общий вес : 	</td>
+	  <td align="center" valign="middle"> 645 кг	</td>
+	  <td align="center" valign="middle"> 645 кг	</td>
+	  <td align="center" valign="middle"> 645 кг	</td>
+	  </tr>
+	</tbody>
+</table>
+</div>
+</div>
+	<div class="popup-item" id="popup-3">
+		<button class="popup-close"></button>
+		<div class="boilers">
+			<div class="boiler-img__wrapper">
+				<img src="imgs/G25D.jpg" width="158" height="200">
+				<p>
+					<strong>VERNER G25</strong> -  классический автоматический котёл на биомассе, работающий по принципу пиролиза.
+				</p>
+				<table class="moby-table">
+					<tr>
+						<td>Расчетная мощность</td>
+						<td>25кВ(макс . 30 кВ)</td>
+					</tr>
+					<tr>
+						<td>Кпд</td>
+						<td>92%</td>
+					</tr>
+					<tr>
+						<td>Расход топлива</td>
+						<td>5.6 кг/ч</td>
+					</tr>
+				</table>
+			</div>
+	<table width="550" cellpadding="0" cellspacing="0" summary="" border="1" class="popup-table">
+	<tbody
+	tr align="center" valign="middle">
+	<th width="252"><div align="center">Топливо * </div></th>
+	<th><div align="center"> Дрова - длина 50 см , O до 10 см , некоторые куски O до 20 см , деревянные брикеты, деревянные щепы, опилки (при влажности топлива до 20%) </div>
+	</th>
+	</tr>
+	<tr valign="top">
+	  <td width="252" valign="middle">Расчетная мощность </td>
+	  <td align="center" valign="middle"> 25 кВ</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Регулировка при непрерывной работе</td>
+	  <td align="center" valign="middle"> 12,5 - 25 кВ	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> КПД</td>
+	  <td align="center" valign="middle"> 94%	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Средняя потребляемость топлива (при расчетной мощности): 	</td>
+	  <td align="center" valign="middle"> 7,5 кг / час	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Период горения при стандартной подаче топлива (при расчетной мощности): </td>
+	  <td align="center" valign="middle"> 4,5 часов</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Объем стандартного топливного бункера : </td>
+	  <td align="center" valign="middle"> 125 л	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Диаметр горловины дымохода : </td>
+	  <td align="center" valign="middle"> 160 мм </td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Заданная рабочая тяга дымохода : </td>
+	  <td align="center" valign="middle"> 15 - 35 Па	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Высота котла : </td>
+	  <td align="center" valign="middle"> 1195 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Ширина котла : </td>
+	  <td align="center" valign="middle"> 648 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Глубина котла : </td>
+	  <td align="center" valign="middle"> 1100 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Общий вес : 	</td>
+	  <td align="center" valign="middle"> 430 кг	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Материал корпуса котла : 	</td>
+	  <td align="center" valign="middle"> Нержавеющая сталь кл . 17	</td>
+	  </tr>
+	</tbody>
+</table>
+</div>
+</div>
+	<div class="popup-item" id="popup-4">
+		<button class="popup-close"></button>
+		<div class="boilers">
+			<div class="boiler-img__wrapper">
+				<img src="imgs/G45.jpg" width="158" height="200">
+				<p>
+					<strong>VERNER G45</strong> - классический автоматический котёл на биомассе, работающий по принципу пиролиза.
+				</p>
+				<table class="moby-table">
+					<tr>
+						<td>Расчетная мощность</td>
+						<td>25кВ(макс . 30 кВ)</td>
+					</tr>
+					<tr>
+						<td>Кпд</td>
+						<td>92%</td>
+					</tr>
+					<tr>
+						<td>Расход топлива</td>
+						<td>5.6 кг/ч</td>
+					</tr>
+				</table>
+			</div>
+	<table width="550" cellpadding="0" cellspacing="0" summary="" border="1" class="popup-table">
+	<tbody><tr align="center" valign="middle">
+	<th width="252"><div align="center">Топливо * </div></th>
+	<th><div align="center"> Дрова - длина 50 см , O до 10 см , некоторые куски O до 20 см , деревянные брикеты, деревянные щепы, опилки (при влажности топлива до 20%)
+
+	</div></th>
+	</tr>
+	<tr valign="top">
+	  <td width="252" valign="middle">Расчетная мощность </td>
+	  <td align="center" valign="middle"> 45 кВ	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Регулировка при непрерывной работе</td>
+	  <td align="center" valign="middle"> 22 - 45 кВ	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> КПД</td>
+	  <td align="center" valign="middle"> 91%	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Средняя потребляемость топлива (при расчетной мощности): 	</td>
+	  <td align="center" valign="middle"> 13,5 кг / час	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Период горения при стандартной подаче топлива (при расчетной мощности): </td>
+	  <td align="center" valign="middle"> 4,5 часов</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Объем стандартного топливного бункера : </td>
+	  <td align="center" valign="middle"> 180 л	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Диаметр горловины дымохода : </td>
+	  <td align="center" valign="middle"> 160 мм </td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Заданная рабочая тяга дымохода : </td>
+	  <td align="center" valign="middle"> 15 - 35 Па	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Высота котла : </td>
+	  <td align="center" valign="middle"> 1540 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Ширина котла : </td>
+	  <td align="center" valign="middle"> 648 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Глубина котла : </td>
+	  <td align="center" valign="middle"> 1100 мм	</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Общий вес : 	</td>
+	  <td align="center" valign="middle"> 570 кг</td>
+	  </tr>
+	<tr valign="top">
+	  <td width="252" valign="middle"> Материал корпуса котла : 	</td>
+	  <td align="center" valign="middle"> Нержавеющая сталь кл . 17	</td>
+	  </tr>
+	</tbody>
+</table>
+</div>
+</div>
+<div class="wrapper-catalog"></div>
+<form method="post" action="#" class="form form-overlay">
+	<span href="#" class="popup-close" tabindex="0"></span>
+	<b class="form__title">Оформить заказ</b>
+	<input type="text" name="name" placeholder="Ваше имя" class="name-input">
+	<input type="tel" name="tel-number" placeholder="Ваш телефон" class="tel-input">
+	<button type="submit" class="form-btn">Заказать</button>
+</form>
 	<script src="script/jquery-3.3.1.min.js"></script>
 	<script src="script/js.js"></script>
 </body>
