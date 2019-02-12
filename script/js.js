@@ -103,19 +103,19 @@ $(document).ready(function(){
 	// слайдер
 	var count = 0;
 	$(".next").on("click",function(){
-		$(".slider-img").removeAttr('style');
+		$(".slider-img").removeClass('active--img');
 		count++;
 		if(count >= $(".slider-img").length){
 			count = 0;
 		}
-		$(".slider-img").eq(count).fadeIn(200);
+		$(".slider-img").eq(count).addClass('active--img');
 	});
 	$(".prev").on("click",function(){
-		$(".slider-img").removeAttr('style');
+		$(".slider-img").removeClass('active--img');
 		count--;
 		if(count == 0){
 			count = $(".slider-img").length-1;
 		}
-		$(".slider-img").eq(count).fadeIn(200);
+		$(".slider-img").eq(count).addClass('active--img');
 	});
 });
