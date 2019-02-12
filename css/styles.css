@@ -204,7 +204,10 @@ h2 {
 @media screen and (max-width: 768px) {
   .tel-1,
   .tel-2 {
+    display: block;
     margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
   }
 }
 .tel-1:active,
