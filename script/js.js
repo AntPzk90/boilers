@@ -86,6 +86,13 @@ $(document).ready(function(){
 	  	var plansOffset = $("#settings").offset().top - headHeight;
 	  	$("html, body").animate({scrollTop:plansOffset},300);
 	});
+
+	$(".setting-btn").on("click", function(e){
+		mobyMenuOff();
+	  	e.preventDefault();
+	  	var plansOffset = $("#settings").offset().top - headHeight;
+	  	$("html, body").animate({scrollTop:plansOffset},300);
+	});
 	// скрол к блоку с каталогом
 	$("#catalog-link").on("click",function(e){
 		mobyMenuOff();
@@ -118,4 +125,5 @@ $(document).ready(function(){
 		}
 		$(".slider-img").eq(count).addClass('active--img');
 	});
+	
 });

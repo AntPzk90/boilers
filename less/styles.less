@@ -10,6 +10,23 @@
 from{opacity: 0;}
 to{opacity: 1;}
 }
+@-webkit-keyframes rotate{
+	/* 0 {
+		-webkit-transform: rotate(0deg);
+		} */
+  	 1.6%, 4.8%, 8%, 11.2%, 14.4% { 
+    	-webkit-transform: rotate(-4deg);
+  		}
+  /* 	50%{
+  	-webkit-transform: rotate(0deg);
+  	} */
+  	3.2%, 6.4%, 9.6%, 12.8%{
+  		-webkit-transform: rotate(4deg);
+  		}
+  	/* 55%{
+  			-webkit-transform: rotate(0deg);
+  			} */	
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -340,9 +357,10 @@ h2{
 	color: @white;
 	display: block;
 	width: 550px;
-	height: 190px;
+	height: 400px;
 	box-sizing: border-box;
 	padding-top:25px; 
+	padding-left: 50px;
 	position: relative;
 	z-index: 0;
 	box-sizing: border-box;
@@ -373,7 +391,7 @@ h2{
 	}
 	.verner-txt{
 		color: @white;
-		font-size: 72px;
+		font-size: 56px;
 		font-weight: bold;
 		@media screen and (max-width: @tablet){
 			font-size: 56px;
@@ -383,26 +401,66 @@ h2{
 			display: block;
 		}
 	}
-	.target{
-		font-size: 16px;
-		color: @black;
+	.setting-title{
+		font-size: 50px;
+		color: @yellow;
 		display: block;
-		@media screen and (max-width: @tablet){
-			font-size: 14px;
-		}
-		@media screen and (max-width: @moby){
-			font-size: 12px;
-			display: block;
-		}
+		font-weight: bold;
+		text-transform: uppercase;
+		text-shadow: 4px 3px 0 #000;
+	}
+	.setting-txt{
+		font-size: 27px;
+		font-weight: bold;
+	}
+	.setting-btn{
+		height: 60px;
+		width: 60px;
+		display: block;
+		border: 3px solid #fff;
+		background-color: @yellow;
+		margin: 0 auto;
+		outline: none;
+		position: relative;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.setting-btn{
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         5s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-transition-timing-function: linear;
+    }
+	.setting-btn:after{
+		content: "";
+		width: 32px;
+		height: 8px;
+		background-color: #fff;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 25px;
+		left: 3px;
+		border-radius: 10px;
+	}
+	.setting-btn:before{
+		content: "";
+		width: 32px;
+		height: 8px;
+		background-color: #fff;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 25px;
+		right: 3px;
+		border-radius: 10px;
 	}
 	@media screen and (max-width: @tablet){
 		width: 480px;
-		height: 170px;
+		height: 400px;
 		margin-left: -40px;
 	}
 	@media screen and (max-width: @moby){
 		width: 100%;
-		height: 160px;
+		height: 400px;
 		box-sizing: border-box;
 		padding:20px 50px; 
 		margin: 0 auto;
