@@ -408,10 +408,28 @@ h2{
 		font-weight: bold;
 		text-transform: uppercase;
 		text-shadow: 4px 3px 0 #000;
+		@media screen and (max-width: @tablet){
+			font-size: 40px;
+		}
+		@media screen and (max-width: @moby){
+			font-size: 35px;
+		}
 	}
 	.setting-txt{
 		font-size: 27px;
 		font-weight: bold;
+		@media screen and (max-width: @tablet){
+			font-size: 22px;
+			display: inline-block;
+			box-sizing: border-box;
+			padding:0 80px;
+		}
+		@media screen and (max-width: @moby){
+			font-size: 22px;
+			display: inline-block;
+			padding:0;
+			margin-bottom: 15px;
+		}
 	}
 	.setting-btn{
 		height: 60px;
@@ -427,7 +445,7 @@ h2{
 	}
 	.setting-btn{
     -webkit-animation-name:             rotate; 
-    -webkit-animation-duration:         5s; 
+    -webkit-animation-duration:         3s; 
     -webkit-animation-iteration-count:  infinite;
     -webkit-transition-timing-function: linear;
     }
@@ -457,6 +475,7 @@ h2{
 		width: 480px;
 		height: 400px;
 		margin-left: -40px;
+
 	}
 	@media screen and (max-width: @moby){
 		width: 100%;
@@ -520,6 +539,7 @@ h2{
 	box-shadow: 10px 11px 16px -5px rgba(0,0,0,0.75);
 	@media screen and (max-width: @moby){
 		margin-bottom: 20px;
+		width: 100%;
 	}
 }
 .form-btn{
