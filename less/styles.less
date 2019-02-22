@@ -342,7 +342,7 @@ h2{
 	}
 	@media screen and (max-width: @moby){
 		margin: 0 auto;
-		margin-bottom: -45px;
+		margin-bottom: -65px;
 	}
 	.big-img{
 		height: 100%;
@@ -357,7 +357,7 @@ h2{
 	color: @white;
 	display: block;
 	width: 550px;
-	height: 400px;
+	min-height: 400px;
 	box-sizing: border-box;
 	padding-top:25px; 
 	padding-left: 50px;
@@ -408,16 +408,20 @@ h2{
 		font-weight: bold;
 		text-transform: uppercase;
 		text-shadow: 4px 3px 0 #000;
+		margin-bottom: 20px;
 		@media screen and (max-width: @tablet){
 			font-size: 40px;
 		}
 		@media screen and (max-width: @moby){
-			font-size: 35px;
+			font-size: 48px;
 		}
 	}
 	.setting-txt{
-		font-size: 27px;
+		font-size: 30px;
 		font-weight: bold;
+		line-height: 35px;
+		display: inline-block;
+		margin-bottom: 20px;
 		@media screen and (max-width: @tablet){
 			font-size: 22px;
 			display: inline-block;
@@ -425,7 +429,7 @@ h2{
 			padding:0 80px;
 		}
 		@media screen and (max-width: @moby){
-			font-size: 22px;
+			font-size: 25px;
 			display: inline-block;
 			padding:0;
 			margin-bottom: 15px;
@@ -473,15 +477,15 @@ h2{
 	}
 	@media screen and (max-width: @tablet){
 		width: 480px;
-		height: 400px;
+		min-height: 400px;
 		margin-left: -40px;
-
 	}
 	@media screen and (max-width: @moby){
 		width: 100%;
-		height: 400px;
+		min-height: 400px;
 		box-sizing: border-box;
-		padding:20px 50px; 
+		padding:20px 50px;
+		padding-top: 40px;
 		margin: 0 auto;
 		margin-bottom: 50px;
 	}
